@@ -11,4 +11,5 @@
 # Ignore all directories and file from this directories
 target/**/*
 .settings/**/*
+.settings
 
