@@ -3,6 +3,17 @@ design-patterns
 
 This repo shows how to implement various design patterns 
 
+Singleton design pattern
+------------------------
+<i>Singleton</i> is an object that has one and only one instance in the system.<br/>
+It has various uses such as an instance that holds library structure, dao to the database, etc...<br/>
+The <i>Singleton</i> example is in the package: **org.sa.singleton** <br/><br/>
+
+Here is a Composite class diagram example: <br/><br/> 
+![ScreenShot](https://raw.github.com/shai-amar/design-patterns/master/src/main/images/CompositeClassDiagram.jpg)
+
+<br/><br/>
+
 Composite design pattern
 ------------------------
 <i>Composite</i> design pattern is known as a ***structural*** pattern and is design to contain a complex data structure 
@@ -30,6 +41,10 @@ Here is an Interpreter class diagram example: <br/><br/>
 
 ![ScreenShot](https://raw.github.com/shai-amar/design-patterns/master/src/main/images/InterpreterClassDiagram.jpg)
 
+<br/><br/>
+
+Command design pattern
+----------------------
 
 
 
