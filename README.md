@@ -23,7 +23,10 @@ The <i>Interpreter</i> example is in the package: **org.sa.interpreter** <br/><b
 
 Here is an Interpreter class diagram example: <br/><br/>
 <b>Context</b> - The context is the object that tells the Interpreter the order of the objects operations.<br/>
-<b>Client</b> - The client that uses the interpreter
+<b>Client</b> - The client that uses the interpreter<br/>
+<b>IComponent</b> - The interface that defines the interpret operation in the <i>Composite</i> design pattern.<br/>
+<b>Component</b> - The Leaf in the <i>Composite</i> design pattern. <br/>
+<b>Composite</b> - The actual composite object.
 
 ![ScreenShot](https://raw.github.com/shai-amar/design-patterns/master/src/main/images/InterpreterClassDiagram.jpg)
 
