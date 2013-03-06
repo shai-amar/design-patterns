@@ -16,6 +16,13 @@ Here is a Composite class diagram example: <br/><br/>
 
 Interpreter design pattern
 --------------------------
+The Interpreter design pattern objective is to convert one data structure to another data structure.<br/>
+Usually it uses Composite design pattern as the data structure that holds the data, and the <i>Interpreter</i> 
+is actually an object that checks the validity of the data.<br/><br/>
 The <i>Interpreter</i> example is in the package: **org.sa.interpreter** <br/><br/>
 Here is an Interpreter class diagram example: <br/><br/>
+
+
+<b>Context</b> - The context is the object that tells the Interpreter the order of the objects operations.<br/>
+
 
