@@ -22,6 +22,7 @@ is actually an object that checks the validity of the data.<br/><br/>
 The <i>Interpreter</i> example is in the package: **org.sa.interpreter** <br/><br/>
 Here is an Interpreter class diagram example: <br/><br/>
 
+![ScreenShot](https://raw.github.com/shai-amar/design-patterns/master/src/main/images/InterpreterClassDiagram.jpg)
 
 <b>Context</b> - The context is the object that tells the Interpreter the order of the objects operations.<br/>
 
