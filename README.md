@@ -10,7 +10,7 @@ It has various uses such as an instance that holds library structure, dao to the
 The <i>Singleton</i> example is in the package: **org.sa.singleton** <br/><br/>
 
 Here is a Composite class diagram example: <br/><br/> 
-![ScreenShot](https://raw.github.com/shai-amar/design-patterns/master/src/main/images/CompositeClassDiagram.jpg)
+![ScreenShot](https://raw.github.com/shai-amar/design-patterns/master/src/main/images/SingletonClassDiagram.jpg)
 
 <br/><br/>
 
