@@ -56,6 +56,18 @@ Here is an Interpreter class diagram example: <br/><br/>
 
 <h3>Command design pattern</h3>
 
+Encapsulate a request as an object, thereby letting you parameterize clients 
+with different requests, queue or log requests, and support undoable operations.<br/>
+
+The <i>Command</i> example is in the package: **org.sa.command** <br/><br/>
+
+<b>Command UML class diagram</b> <br/><br/> 
+![ScreenShot](https://raw.github.com/shai-amar/design-patterns/master/src/main/images/CompositeClassDiagram.jpg)
+
+<br/><br/>
+
+
+
 
 
 
