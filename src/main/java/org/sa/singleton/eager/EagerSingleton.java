@@ -9,9 +9,7 @@ public class EagerSingleton
 	private static EagerSingleton ms_instance = new EagerSingleton();
 	
 	private EagerSingleton()
-	{
-		
-	}
+	{}
 	
 	public static EagerSingleton getInstance()
 	{
