@@ -5,10 +5,9 @@ public class LazySingleton
 	
 	private static LazySingleton ms_instance;
 	
+	
 	private LazySingleton()
-	{
-		
-	}
+	{}
 	
 	public static LazySingleton instance()
 	{
