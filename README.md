@@ -25,7 +25,7 @@ Here is a Composite class diagram example: <br/><br/>
 
 <br/><br/>
 
-Interpreter design pattern
+<!--Interpreter design pattern
 --------------------------
 The Interpreter design pattern objective is to convert one data structure to another data structure.<br/>
 Usually it uses the <i>Composite</i> design pattern as the data structure that holds the data, and the <i>Interpreter</i> 
@@ -41,7 +41,7 @@ Here is an Interpreter class diagram example: <br/><br/>
 
 ![ScreenShot](https://raw.github.com/shai-amar/design-patterns/master/src/main/images/InterpreterClassDiagram.jpg)
 
-<br/><br/>
+<br/><br/> -->
 
 Command design pattern
 ----------------------
