@@ -1,15 +1,20 @@
 design-patterns
 ===============
 
-This repo shows how to implement various design patterns 
+Design patterns are solutions to software design problems you find again and again in real-world application development. Patterns are about reusable designs and interactions of objects..
+
+The 23 Gang of Four (GoF) patterns are generally considered the foundation for all other patterns. They are categorized in three groups: Creational, Structural, and Behavioral
+This repo shows how to implement various design patterns.
 
 Singleton design pattern
 ------------------------
-<i>Singleton</i> is an object that has one and only one instance in the system.<br/>
-It has various uses such as an instance that holds library structure, dao to the database, etc...<br/>
+
+**Definition**<br/>
+Ensure a class has only one instance and provide a global point of access to it.
+
 The <i>Singleton</i> example is in the package: **org.sa.singleton** <br/><br/>
 
-Here is a Composite class diagram example: <br/><br/> 
+<b>Singleton UML class diagram</b> <br/><br/> 
 ![ScreenShot](https://raw.github.com/shai-amar/design-patterns/master/src/main/images/SingletonClassDiagram.jpg)
 
 <br/><br/>
