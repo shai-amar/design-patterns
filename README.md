@@ -9,7 +9,6 @@ This repo shows how to implement various design patterns.
 Singleton design pattern
 ------------------------
 
-**Definition**<br/>
 Ensure a class has only one instance and provide a global point of access to it.
 
 The <i>Singleton</i> example is in the package: **org.sa.singleton** <br/><br/>
@@ -21,11 +20,13 @@ The <i>Singleton</i> example is in the package: **org.sa.singleton** <br/><br/>
 
 Composite design pattern
 ------------------------
-<i>Composite</i> design pattern is known as a ***structural*** pattern and is design to contain a complex data structure 
-(N-Tree) in a user friendly objects structure.<br/>
+
+Compose objects into tree structures to represent part-whole hierarchies. 
+Composite lets clients treat individual objects and compositions of objects uniformly.<br/>
+
 The <i>Composite</i> example is in the package: **org.sa.composite** <br/><br/>
 
-Here is a Composite class diagram example: <br/><br/> 
+<b>Composite UML class diagram</b> <br/><br/> 
 ![ScreenShot](https://raw.github.com/shai-amar/design-patterns/master/src/main/images/CompositeClassDiagram.jpg)
 
 <br/><br/>
