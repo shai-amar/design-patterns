@@ -1,13 +1,15 @@
-design-patterns
-===============
+<h1>design-patterns</h1>
+
 
 Design patterns are solutions to software design problems you find again and again in real-world application development. Patterns are about reusable designs and interactions of objects..
 
 The 23 Gang of Four (GoF) patterns are generally considered the foundation for all other patterns. They are categorized in three groups: Creational, Structural, and Behavioral
 This repo shows how to implement various design patterns.
 
-Singleton design pattern
-------------------------
+<h2>Creational patterns</h2>
+
+<h3>Singleton design pattern</h3>
+
 
 Ensure a class has only one instance and provide a global point of access to it.
 
@@ -18,8 +20,9 @@ The <i>Singleton</i> example is in the package: **org.sa.singleton** <br/><br/>
 
 <br/><br/>
 
-Composite design pattern
-------------------------
+<h2>Structural patterns</h2>
+
+<h3>Composite design pattern</h3>
 
 Compose objects into tree structures to represent part-whole hierarchies. 
 Composite lets clients treat individual objects and compositions of objects uniformly.<br/>
@@ -49,8 +52,11 @@ Here is an Interpreter class diagram example: <br/><br/>
 
 <br/><br/> -->
 
-Command design pattern
-----------------------
+<h2>Behavioral patterns</h2>
+
+<h3>Command design pattern</h3>
+
+
 
 
 
