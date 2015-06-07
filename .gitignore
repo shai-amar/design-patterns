@@ -8,8 +8,11 @@
 .classpath
 
 # Folders #
-# Ignore all directories and file from this directories
+# Eclipse: Ignore all directories and file from this directories
 target/**/*
 .settings/**/*
 .settings
 
+# IntelliJ: Ignore all the metadata files and directories
+.idea/**/*
+design-patterns.iml
