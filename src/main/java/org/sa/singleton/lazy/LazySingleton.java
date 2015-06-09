@@ -3,27 +3,18 @@ package org.sa.singleton.lazy;
 public class LazySingleton 
 {
 	
-	private static LazySingleton ms_instance;
-	
-	
 	private LazySingleton()
 	{}
 	
 	public static LazySingleton instance()
-	{
-		//	Double locking check mechanism
-		if(ms_instance == null)
-		{
-			synchronized (ms_instance) 
-			{
-				if(ms_instance == null)
-				{
-					ms_instance = new LazySingleton();
-				}
-			}
-		}
-		
-		return ms_instance;
+	{   //  Initializing the lazy singleton only by demand, meaning, the
+	    // inner class does not created until it is called
+		return LazySingletonHolder.INSTANCE;
 	}
+
+    private static class LazySingletonHolder
+    {
+        public static final LazySingleton INSTANCE =  new LazySingleton();
+    }
 	
 }
