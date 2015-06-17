@@ -28,9 +28,9 @@ The <i>Singleton</i> example is in the package: **org.sa.singleton.eager** <br/>
 <br/><br/>
 
 <h4>Singleton Lazy Instanciation</h4>
-Instanciate the Singleton only when the client start uses the Singleton. Can be used when the singleton needs to instanciate parameters in the Constructor.
-There is the problem of instanciate 2 instances of a singleton with 2 Threads simultaniously, which has tried to solve unsucsessfully with double locking mechanism.
-This solution is an elegant solution that solves this specific issue and insures that the first client (doesn't matter from which thread) instanciates the Singleton.
+Instanciate the Singleton only when the client start uses the Singleton. Can be used when the singleton needs to instanciate parameters in the Constructor.</br>
+There is the problem of instanciate 2 instances of a singleton with 2 Threads simultaniously, which has tried to solve unsucsessfully with double locking mechanism.</br>
+This solution is an elegant solution that solves this specific issue and insures that the first client (doesn't matter from which thread) instanciates the Singleton.</br>
 
 
 <b>Singleton Lazy instanciation class diagram</b>
