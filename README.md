@@ -13,6 +13,17 @@ This repo shows how to implement various design patterns.
 
 Ensure a class has only one instance and provide a global point of access to it.
 
+There are 2 kinds of Singleton implementation:
+1. Eager instanciation - instanciate the Singleton at Class creation
+2. Lazy instanciation  - instanciate the Singleton only when the client start uses the Singleton
+
+<h4>Singleton Eager Instanciation</h4>
+Pretty simple, instanciate the Singleton at Class creation. Can be used when the singleton does not need to instanciate parameters in the Constructor
+
+<b>Singleton Eager instanciation class diagram</b>
+
+
+
 The <i>Singleton</i> example is in the package: **org.sa.singleton** <br/><br/>
 
 <b>Singleton UML class diagram</b> <br/><br/> 
