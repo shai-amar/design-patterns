@@ -18,17 +18,23 @@ There are 2 kinds of Singleton implementation:
 2. Lazy instanciation  - instanciate the Singleton only when the client start uses the Singleton
 
 <h4>Singleton Eager Instanciation</h4>
-Pretty simple, instanciate the Singleton at Class creation. Can be used when the singleton does not need to instanciate parameters in the Constructor
+Instanciate the Singleton at Class creation. Can be used when the singleton does not need to instanciate parameters in the Constructor
 
 <b>Singleton Eager instanciation class diagram</b>
 
+The <i>Singleton</i> example is in the package: **org.sa.singleton.eager** <br/><br/>
 
-
-The <i>Singleton</i> example is in the package: **org.sa.singleton** <br/><br/>
-
-<b>Singleton UML class diagram</b> <br/><br/> 
 ![ScreenShot](https://raw.github.com/shai-amar/design-patterns/master/src/main/images/eagerSingleton.PNG)
+<br/><br/>
 
+<h4>Singleton Lazy Instanciation</h4>
+Instanciate the Singleton only when the client start uses the Singleton. Can be used when the singleton needs to instanciate parameters in the Constructor
+
+<b>Singleton Lazy instanciation class diagram</b>
+
+The <i>Singleton</i> example is in the package: **org.sa.singleton.lazy** <br/><br/>
+
+![ScreenShot](https://raw.github.com/shai-amar/design-patterns/master/src/main/images/lazySingleton.png)
 <br/><br/>
 
 <h2>Structural patterns</h2>
