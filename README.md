@@ -27,7 +27,7 @@ Pretty simple, instanciate the Singleton at Class creation. Can be used when the
 The <i>Singleton</i> example is in the package: **org.sa.singleton** <br/><br/>
 
 <b>Singleton UML class diagram</b> <br/><br/> 
-![ScreenShot](https://raw.github.com/shai-amar/design-patterns/master/src/main/images/SingletonClassDiagram.jpg)
+![ScreenShot](https://raw.github.com/shai-amar/design-patterns/master/src/main/images/eagerSingleton.png)
 
 <br/><br/>
 
