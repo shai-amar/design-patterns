@@ -15,64 +15,64 @@ package org.sa.builder;
  */
 public class User
 {
-    private final String firstName;
-    private final String lastName;
-    private final int age;
-    private final String phone;
-    private final String address;
+    private final String FIRST_NAME;
+    private final String LAST_NAME;
+    private final int AGE;
+    private final String PHONE;
+    private final String ADDRESS;
 
     private User(UserBuilder ub)
     {
-        this.firstName = ub.firstName;
-        this.lastName  = ub.lastName;
-        this.age       = ub.age;
-        this.phone     = ub.phone;
-        this.address   = ub.address;
+        this.FIRST_NAME = ub.FIRST_NAME;
+        this.LAST_NAME = ub.LAST_NAME;
+        this.AGE = ub.age;
+        this.PHONE = ub.phone;
+        this.ADDRESS = ub.address;
     }
 
     public String getFirstName()
     {
-        return firstName;
+        return FIRST_NAME;
     }
 
     public String getLastName()
     {
-        return lastName;
+        return LAST_NAME;
     }
 
     public int getAge()
     {
-        return age;
+        return AGE;
     }
 
     public String getPhone()
     {
-        return phone;
+        return PHONE;
     }
 
     public String getAddress()
     {
-        return address;
+        return ADDRESS;
     }
 
     @Override
     public String toString() {
         return "User{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", age=" + age +
-                ", phone='" + phone + '\'' +
-                ", address='" + address + '\'' +
+                "FIRST_NAME='" + FIRST_NAME + '\'' +
+                ", LAST_NAME='" + LAST_NAME + '\'' +
+                ", AGE=" + AGE +
+                ", PHONE='" + PHONE + '\'' +
+                ", ADDRESS='" + ADDRESS + '\'' +
                 '}';
     }
 
     public static class UserBuilder
     {
         //  mandatory field
-        private final String firstName;
+        private final String FIRST_NAME;
 
         //  mandatory field
-        private final String lastName;
+        private final String LAST_NAME;
 
         //  Optional fields
         private int age;
@@ -81,8 +81,8 @@ public class User
 
        public UserBuilder(String firstName, String lastName)
        {
-           this.firstName = firstName;
-           this.lastName  = lastName;
+           this.FIRST_NAME = firstName;
+           this.LAST_NAME = lastName;
        }
 
         public UserBuilder age(int age)

@@ -1,7 +1,7 @@
 package org.sa.client;
 
-import org.sa.composite.Component;
-import org.sa.composite.Composite;
+import org.sa.composite.FileComponent;
+import org.sa.composite.FileComposite;
 
 /**
  * This is the client that demonstrate the use in the Composite design pattern.
@@ -14,50 +14,39 @@ public class CompositeClient
 	
 	public static void main(String[] args)
 	{
-		//	Initialize the command initial parameters...
-		Component componentCreate = new Component("create");
-		Component componentReview = new Component("review");
-		Component componentFor = new Component("for=(shadow_SHAI)");
-		Component componentFilt = new Component("with filters:");
-		
-		//	Init the filter parameters...
-		Component componentFilt1 = new Component("filter1");
-		Component componentFilt2 = new Component("filter2");
-		Component componentFilt3 = new Component("filter3");
-		
-		//	Init the conditions parameters...
-		Component componentCond = new Component("conditions:");
-		Component componentCond1 = new Component("cond1");
-		Component componentCond2 = new Component("cond2");
-		Component componentCond3 = new Component("cond3");
-		
-		//	Init the composite objects...
-		Composite compositeMain = new Composite();
-		Composite compositeFilt = new Composite();
-		Composite compositeCond = new Composite();
-		
-		compositeMain.add(componentCreate);
-		compositeMain.add(componentReview);
-		compositeMain.add(componentFor);
-		
-		//	Building the filters composite...
-		compositeFilt.add(componentFilt1);
-		compositeFilt.add(componentFilt2);
-		compositeFilt.add(componentFilt3);
-		
-		compositeMain.add(componentFilt);
-		compositeMain.add(compositeFilt);
-		
-		//	Building the conditions composite...
-		compositeCond.add(componentCond1);
-		compositeCond.add(componentCond2);
-		compositeCond.add(componentCond3);
-		
-		compositeMain.add(componentCond);
-		compositeMain.add(compositeCond);
-		
-		compositeMain.printCommand();
-		
+        new CompositeClient().runFileComposite();
 	}
+
+    private void runFileComposite()
+    {
+        FileComposite fatherDir     = new FileComposite("Father");
+        FileComposite sonShaiDir    = new FileComposite("SonShai");
+        FileComposite sonRoi        = new FileComposite("SonRoi");
+
+        FileComponent brotherAlmog  = new FileComponent("BrotherAlmog");
+        FileComponent sisterShira   = new FileComponent("SisterShira");
+        FileComponent brotherTal    = new FileComponent("BrotherTal");
+
+        FileComponent gsMaya        = new FileComponent("GSMaya");
+        FileComponent gsItai        = new FileComponent("GSItai");
+        FileComponent gsNoa         = new FileComponent("GSNoa");
+        FileComponent gsIlai        = new FileComponent("Ilai");
+        FileComponent gsYovel       = new FileComponent("GSYovel");
+
+        sonShaiDir.add(gsMaya);
+        sonShaiDir.add(gsItai);
+        sonShaiDir.add(gsNoa);
+
+        sonRoi.add(gsIlai);
+        sonRoi.add(gsYovel);
+
+        fatherDir.add(sonShaiDir);
+        fatherDir.add(sonRoi);
+        fatherDir.add(sisterShira);
+        fatherDir.add(brotherAlmog);
+        fatherDir.add(brotherTal);
+
+        fatherDir.printFileName();
+    }
 	
 }
