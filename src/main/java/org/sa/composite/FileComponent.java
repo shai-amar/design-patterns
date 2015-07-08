@@ -38,10 +38,4 @@ public class FileComponent implements IFileComponent
         System.out.println("  File:" + this.fileName);
     }
 
-    @Override
-    public String toString() {
-        return "FileComponent{" +
-                "fileName='" + fileName + '\'' +
-                '}';
-    }
 }
