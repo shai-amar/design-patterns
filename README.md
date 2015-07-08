@@ -50,7 +50,7 @@ Composite lets clients treat individual objects and compositions of objects unif
 The <i>Composite</i> example is in the package: **org.sa.composite** <br/><br/>
 
 <b>Composite UML class diagram</b> <br/><br/> 
-![ScreenShot](https://raw.github.com/shai-amar/design-patterns/master/src/main/images/CompositeClassDiagram.jpg)
+![ScreenShot](https://raw.github.com/shai-amar/design-patterns/master/src/main/images/compositeFile.png)
 
 <br/><br/>
 
