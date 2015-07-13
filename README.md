@@ -47,7 +47,7 @@ The <i>Singleton</i> example is in the package: **org.sa.singleton.lazy** <br/><
 Compose objects into tree structures to represent part-whole hierarchies. 
 Composite lets clients treat individual objects and compositions of objects uniformly.<br/>
 
-The <i>Composite</i> example is in the package: **org.sa.composite** <br/>
+The <i>Composite</i> example is in the package: **org.sa.composite.file** <br/>
 
 This example is a case of how to build a file system. The main difference in this example is that the **IFileComponent** interface enforce its implementations to implement **add** and **remove** methods.<br /><br />
 **Pros:** Allow the user to implement the same operations for a tree leaf and tree node.<br />
