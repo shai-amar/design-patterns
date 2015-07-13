@@ -1,9 +1,7 @@
-package org.sa.composite;
+package org.sa.composite.file;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * Created with IntelliJ IDEA.

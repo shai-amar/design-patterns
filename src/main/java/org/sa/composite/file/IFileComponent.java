@@ -1,4 +1,4 @@
-package org.sa.composite;
+package org.sa.composite.file;
 
 /**
  * Created with IntelliJ IDEA.

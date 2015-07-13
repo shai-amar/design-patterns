@@ -1,7 +1,10 @@
 package org.sa.client;
 
-import org.sa.composite.FileComponent;
-import org.sa.composite.FileComposite;
+import org.sa.composite.arithmetic.IArithmeticComponent;
+import org.sa.composite.arithmetic.Multiply;
+import org.sa.composite.arithmetic.PlusComponent;
+import org.sa.composite.file.FileComponent;
+import org.sa.composite.file.FileComposite;
 
 /**
  * This is the client that demonstrate the use in the Composite design pattern.
@@ -14,7 +17,8 @@ public class CompositeClient
 	
 	public static void main(String[] args)
 	{
-        new CompositeClient().runFileComposite();
+//        new CompositeClient().runFileComposite();
+        new CompositeClient().runCalculateComposite();
 	}
 
     private void runFileComposite()
@@ -48,5 +52,15 @@ public class CompositeClient
 
         fatherDir.printFileName();
     }
+
+    private void runCalculateComposite()
+    {
+        IArithmeticComponent leftSection  = new PlusComponent(1,2);
+        IArithmeticComponent rightSection = new PlusComponent(3,4);
+        IArithmeticComponent rootSection  = new Multiply(leftSection.calculate(), rightSection.calculate());
+
+        System.out.println(rootSection.calculate());
+    }
+
 	
 }
