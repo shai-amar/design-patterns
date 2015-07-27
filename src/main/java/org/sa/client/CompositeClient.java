@@ -1,8 +1,6 @@
 package org.sa.client;
 
-import org.sa.composite.arithmetic.IArithmeticComponent;
-import org.sa.composite.arithmetic.Multiply;
-import org.sa.composite.arithmetic.PlusComponent;
+import org.sa.composite.arithmetic.*;
 import org.sa.composite.file.FileComponent;
 import org.sa.composite.file.FileComposite;
 
@@ -55,11 +53,15 @@ public class CompositeClient
 
     private void runCalculateComposite()
     {
-        IArithmeticComponent leftSection  = new PlusComponent(1,2);
-        IArithmeticComponent rightSection = new PlusComponent(3,4);
-        IArithmeticComponent rootSection  = new Multiply(leftSection.calculate(), rightSection.calculate());
+        IArithmeticComponent leftSection  = new MultiplyComponent(3.4,4.2);
+        IArithmeticComponent rightSection = new PlusComponent(2,1);
+        IArithmeticComponent rootSection = new ArithmeticDivideComposite();
+        rootSection.add(leftSection);
+        rootSection.add(rightSection);
+//        IArithmeticComponent rootSection  = new MultiplyComponent(leftSection.calculate(), rightSection.calculate());
+        System.out.println("The result:" + rootSection.calculate());
 
-        System.out.println(rootSection.calculate());
+//        System.out.println(rootSection.calculate());
     }
 
 	

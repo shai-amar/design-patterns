@@ -28,7 +28,6 @@ public class FileComposite implements IFileComponent
     }
 
 
-    @Override
     public void printFileName()
     {
         System.out.println("Folder:" + this.directoryName);
@@ -44,7 +43,6 @@ public class FileComposite implements IFileComponent
         this.children.add(component);
     }
 
-    @Override
     public void remove(IFileComponent file) {
         this.children.remove(file);
     }

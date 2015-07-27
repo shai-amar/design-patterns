@@ -22,17 +22,14 @@ public class FileComponent implements IFileComponent
      *
      * @param file
      */
-    @Override
     public void add(IFileComponent file) {
         //  Nothing to add. In this case it is a file and not a directory
     }
 
-    @Override
     public void remove(IFileComponent file) {
         //  Nothing to remove. In this case it is a file and not a directory
     }
 
-    @Override
     public void printFileName()
     {
         System.out.println("  File:" + this.fileName);
